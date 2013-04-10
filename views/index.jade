@@ -1,22 +1,22 @@
 extends layout
 
 block body
-  h1 Angular Socket.io IM Demo App
+  h1 jess & jerm groceries
   div(ng-controller='AppCtrl')
     .col
-      h3 Messages
+      h3 Items
       .overflowable
         p(ng-repeat='message in messages',
           ng-class='{alert: message.user == "chatroom"}') {{message.user}}: {{message.text}}
 
     .col
-      h3 Users
+      h3 Who's here
       .overflowable
         p(ng-repeat='user in users') {{user}}
 
     .clr
       form(ng-submit='sendMessage()')
-        | Message: 
+        | Whatcha need: 
         input(size='60', ng-model='message')
         input(type='submit', value='Send')
 

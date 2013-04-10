@@ -1,10 +1,17 @@
 {
-    "name": "angular-socket-io-im"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.5.10"
-    , "jade": ">= 0.26.1"
-    , "socket.io": ">= 0.9.6"
-  }
+    "name": "angular-socket-io-im",
+    "version": "0.0.1-7",
+    "private": true,
+    "dependencies": {
+        "express": "2.5.10",
+        "jade": ">= 0.26.1",
+        "socket.io": ">= 0.9.6"
+    },
+    "subdomain": "possiblyaduck-angular-socket-io-im",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "engines": {
+        "node": "0.8.x"
+    }
 }
